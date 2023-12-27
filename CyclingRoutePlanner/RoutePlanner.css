@@ -2,3 +2,18 @@
        height: 98vh;
        width: 100%; 
     }
+
+.cluster-div {
+   background-color: #fff;
+   height: 3rem;
+   width: 3rem;
+   border-radius: 50%;
+   box-shadow: 0 0 0px 4px;
+
+   transform: translated(-50%, -50%);
+   display: flex;
+   justify-content: center;
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+/*  see Alejandro AO 'Javascript Interactive Map with Leaflet EASY (with Marker Clusters & Popups)' YT video for information on clusters*/
