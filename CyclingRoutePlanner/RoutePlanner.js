@@ -31,13 +31,17 @@ var climbIcon = L.icon({
 //Import climbs data
 var climbscluster = L.markerClusterGroup();
 
-var climbsData = L.geoJson(climbsJSON, 
-    {
+var climbsData = L.geoJson(climbsJSON, {
     onEachFeature: function(feature, layer) {
-        layer.bindPopup(feature.properties.name)},
+        layer.bindPopup(feature.properties.name);
+        layer.on('click', function(e) {
+            map.flyTo(e.latlng); // Fly to the clicked marker's position
+        });
+    },
     pointToLayer: function(feature, latlng) {
-        return L.marker(latlng, {icon: climbIcon})}
-    })
+        return L.marker(latlng, {icon: climbIcon});
+    }
+});
 
 climbsData.addTo(climbscluster)    
 
