@@ -1,4 +1,5 @@
-const Openrouteservice = require('openrouteservice-js')
+import Openrouteservice from '/components/ors-js-client.js'
+//var Openrouteservice = require('openrouteservice-js')
 
 (function () {
   "use strict";
@@ -201,10 +202,10 @@ const Openrouteservice = require('openrouteservice-js')
     },
   });
 
-  L.Routing.openrouteserviceV2 = function (apiKey, orsOptions, options) {
+  L.Routing.OpenRouteServiceV2 = function (apiKey, orsOptions, options) {
     return new L.Routing.OpenRouteServiceV2(apiKey, orsOptions, options);
   };
 
   // Browserify
-  // module.exports = L.Routing.OpenRouteServiceV2;
+// module.exports = L.Routing.OpenRouteServiceV2;
 })();

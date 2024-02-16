@@ -4,8 +4,8 @@
       <title>Cycling Route Planner</title>
       
       <!-- Node.js fixes -->
-     <script type="text/javascript" src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
-     <script type="text/javascript" src="https://unpkg.com/web3@0.20.5/dist/web3.min.js"></script>
+      <!-- <script type="text/javascript" src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script> -->
+      <!-- <script type="text/javascript" src="https://unpkg.com/web3@0.20.5/dist/web3.min.js"></script> -->
 
       <!-- Leaflet plugin -->
      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -16,20 +16,14 @@
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
 
+     <!-- Polyline Plugin -->
+     <script src="https://cdn.jsdelivr.net/npm/polyline@0.2.0/src/polyline.min.js"></script>
+
      <!-- Leaflet Routing Machine plugin -->
      <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
 
      <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
-
-     <!-- Polyline Plugin -->
-     <script src="https://cdn.jsdelivr.net/npm/polyline@0.2.0/src/polyline.min.js"></script>
-
-
-     <!-- ORS Plugins-->
-     <script type="module" src="/node_modules/openrouteservice-js/dist/ors-js-client.js"></script>
-     <!-- <script src="/other/ORS.js"></script> -->
-     <script src="/other/ORSv2.js"></script>
-
+   
      <!-- Leaflet Marker Cluster plugin-->
      <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
 
@@ -47,6 +41,11 @@
 
    <body>
    
+   <!-- ORS Plugins-->
+   <script type="module" src="/components/ors-js-client.js"></script>
+   <!-- <script src="/components/ORS.js"></script> --> 
+   <script type="module" src="/components/ORSv2.js"></script>
+
     <!--Display map-->
    <div id="map"></div>
 
