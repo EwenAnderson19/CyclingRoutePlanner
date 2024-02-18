@@ -17,3 +17,22 @@
    font-weight: bold;
 }
 /*  see Alejandro AO 'Javascript Interactive Map with Leaflet EASY (with Marker Clusters & Popups)' YT video for information on clusters*/
+
+/* Marker popup styling */
+
+.popup-content {
+   max-width: 300px; /* Set maximum width of the popup container */
+}
+
+.popup-description p {
+   margin-bottom: 10px;
+}
+
+.popup-image img {
+   max-width: 300px; /* Ensure image resizes to fit its container */
+   height: auto; /* Maintain aspect ratio */
+   display: block; /* Prevent whitespace around images */
+   margin-top: 10px; /* Add some margin for spacing */
+   max-width: 300px; /* Set maximum width for the image */
+   max-height: 300px; /* Set maximum height for the image */
+}
